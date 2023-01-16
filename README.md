@@ -21,14 +21,29 @@ You may:
 
 - Get inspired to create your own campaign.
 
-## Contributing 
-Fork it!
+## Recommended IDE Setup
 
-- Create your feature branch: git checkout -b my-new-feature
-- Commit your changes
-- Push to the branch: git push origin my-new-feature
-- Submit a pull request :)
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+npm install
+
+### Compile and Hot-Reload for Development
+
+npm run dev
+
+### Compile and Minify for Production
+
+npm run build
+
+### Lint with [ESLint](https://eslint.org/)
+
+npm run lint
 
 ## MIT LICENSE 
 Copyright 2023 Amr Shoeib, Mariia Shevchenko, Laura Albarracin, Nathálya Menezes and Tallyta Triolo
