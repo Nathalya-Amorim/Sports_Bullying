@@ -1,6 +1,7 @@
 # Women in Hockey Games - Bullying Prevention Campaign
 ## Description 
-Bullying is a significant problem in schools, workplaces, homes, and online. The Campaign One For All | All For One is headed to prevent bullying against women who play hockey. The campaign takes a stand against bullying and incentives people to work together and treat others with dignity and respect.   
+Bullying is a significant problem in schools, workplaces, homes, and online. The Campaign We All Hockey is headed to prevent bullying against women who play hockey. The campaign takes a stand against bullying and incentives people to work together and treat others with dignity and respect. 
+
 ## Languages / Tools 
 - BoostrapVue
 - PHP 
