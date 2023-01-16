@@ -10,7 +10,7 @@ Bullying is a significant problem in schools, workplaces, homes, and online. The
 - Mariia Shevchenko - Motion Designer
 - Laura Albarracin - Project Manager
 - Nathálya Menezes - Front End Developer
-- Tallyta Triolo - Bacck End Developer
+- Tallyta Triolo - Back End Developer
 
 
 ## Installation
