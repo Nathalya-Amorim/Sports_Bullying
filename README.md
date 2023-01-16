@@ -1,4 +1,9 @@
 # Women in Hockey Games - Bullying Prevention Campaign
+
+<p align="center">
+<img src="./img/logo.JPG" width="300" style="margin:auto; display:block">
+</p>
+
 ## Description 
 Bullying is a significant problem in schools, workplaces, homes, and online. The Campaign We All Hockey is headed to prevent bullying against women who play hockey. The campaign takes a stand against bullying and incentives people to work together and treat others with dignity and respect. 
 
