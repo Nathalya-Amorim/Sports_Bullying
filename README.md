@@ -27,23 +27,23 @@ You may:
 
 ## Customize configuration
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 ## Project Setup
 
-npm install
+- npm install
 
 ### Compile and Hot-Reload for Development
 
-npm run dev
+- npm run dev
 
 ### Compile and Minify for Production
 
-npm run build
+- npm run build
 
 ### Lint with [ESLint](https://eslint.org/)
 
-npm run lint
+- npm run lint
 
 ## MIT LICENSE 
 Copyright 2023 Amr Shoeib, Mariia Shevchenko, Laura Albarracin, Nathálya Menezes and Tallyta Triolo
