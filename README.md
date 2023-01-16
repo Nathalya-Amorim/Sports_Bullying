@@ -2,9 +2,16 @@
 ## Description 
 Bullying is a significant problem in schools, workplaces, homes, and online. The Campaign One For All | All For One is headed to prevent bullying against women who play hockey. The campaign takes a stand against bullying and incentives people to work together and treat others with dignity and respect.   
 ## Languages / Tools 
-- to be defined
-- to be defined
-- to be defined 
+- BoostrapVue
+- PHP 
+
+## Collaborators
+- Amr Shoeib - Graphic Designer
+- Mariia Shevchenko - Motion Designer
+- Laura Albarracin - Project Manager
+- Nathálya Menezes - Front End Developer
+- Tallyta Triolo - Bacck End Developer
+
 
 ## Installation
 - Installation is not needed.
