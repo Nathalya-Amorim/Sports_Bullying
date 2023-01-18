@@ -12,11 +12,11 @@ Bullying is a significant problem in schools, workplaces, homes, and online. The
 - PHP 
 
 ## Collaborators
-- Amr Shoeib - Graphic Designer
+- Tallyta Triolo - Graphic Designer
 - Mariia Shevchenko - Motion Designer
 - Laura Albarracin - Project Manager
-- Nathálya Menezes - Front End Developer
-- Tallyta Triolo - Back End Developer
+- Nathálya Menezes - Front End / Back End Developer
+
 
 
 ## Installation
@@ -52,7 +52,7 @@ You may:
 - npm run lint
 
 ## MIT LICENSE 
-Copyright 2023 Amr Shoeib, Mariia Shevchenko, Laura Albarracin, Nathálya Menezes and Tallyta Triolo
+Copyright 2023 Mariia Shevchenko, Laura Albarracin, Nathálya Menezes and Tallyta Triolo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
