@@ -1,7 +1,7 @@
 # Women in Hockey Games - Bullying Prevention Campaign
 
 <p align="center">
-<img src="./img/logo.JPG" width="300" style="margin:auto; display:block">
+<img src="./img/" width="300" style="margin:auto; display:block">
 </p>
 
 ## Description 
@@ -12,10 +12,10 @@ Bullying is a significant problem in schools, workplaces, homes, and online. The
 - PHP 
 
 ## Collaborators
-- Tallyta Triolo - Graphic Designer
 - Mariia Shevchenko - Motion Designer
 - Laura Albarracin - Project Manager
 - Nathálya Menezes - Front End / Back End Developer
+- Tallyta Triolo - Graphic Designer / Web Designer
 
 
 
