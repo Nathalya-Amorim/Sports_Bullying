@@ -1,7 +1,7 @@
 # Women in Hockey Games - Bullying Prevention Campaign
 
 <p align="center">
-<img src="./img/logo_campaign" width="600" style="margin:auto; display:block">
+<img src="./img/logo_campaign.svg" width="600" style="margin:auto; display:block">
 </p>
 
 ## Description 
