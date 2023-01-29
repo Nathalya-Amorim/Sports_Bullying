@@ -25,7 +25,7 @@ export default {
 .hero-container {
     position: relative;
     width: 100%;
-    height: 900px;
+    height: 750px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,8 +44,7 @@ export default {
     right: 20px;
     font-family: $primary-font;
     text-transform: uppercase;
-    font-weight: bold;
-    // font-size: 3.0em;
+
 }
 
 .logo-container {

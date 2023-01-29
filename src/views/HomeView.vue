@@ -12,4 +12,10 @@ main {
   max-width: 1280px;
   margin: auto;
 }
+
+.container {
+  max-width: 1280px;
+  margin: auto;
+
+}
 </style>
