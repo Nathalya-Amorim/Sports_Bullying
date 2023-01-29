@@ -1,9 +1,15 @@
 <script setup lang="ts">
-import AboutSection from '../components/AboutSection.vue';
+// import HeaderSection from '../components/HeaderSection.vue';
 </script>
 
 <template>
-  <main>
-    <AboutSection />
+  <main id="body">
+
   </main>
 </template>
+<style lang="scss">
+main {
+  max-width: 1280px;
+  margin: auto;
+}
+</style>
