@@ -9,7 +9,7 @@
                     walks of life.
                     However, like any
                     sport, it can also be a breeding ground for negative behavior, including bullyig.
-                    <br> <br></br>At <span class="highlight-eminence">#WeAreAllHockey</span>, we believe that every
+                    <br><br>At <span class="highlight-eminence">#WeAreAllHockey</span>, we believe that every
                     player
                     will be
                     able to enjoy
@@ -17,7 +17,7 @@
                     of harassment, sexism, or bullying.
                 </p>
             </div>
-            <div class="col ">
+            <div class="col">
                 <b-img src="https://via.placeholder.com/1100x400" fluid alt=" Image"></b-img>
             </div>
 
