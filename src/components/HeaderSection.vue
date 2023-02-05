@@ -1,6 +1,7 @@
 <template>
 
-    <main>
+    <section>
+        <h2 class="hidden">Header Section</h2>
         <div class="hero-container">
             <div class="logo-container">
                 <h1 class="hidden">We Are All Hockey</h1>
@@ -11,7 +12,7 @@
                     no
                     one</span></h2>
         </div>
-    </main>
+    </section>
 
 </template>
 
@@ -29,7 +30,8 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url(https://via.placeholder.com/1200x760);
+    background-repeat: no-repeat;
+    background-image: url(https://via.placeholder.com/1900x760);
 }
 
 .hero-image {
