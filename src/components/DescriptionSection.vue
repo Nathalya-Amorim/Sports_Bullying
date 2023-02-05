@@ -4,8 +4,8 @@
         <h2 class=" font-weight-bold display-5  highlight-eminence text-uppercase font-family">a major penalty for
             bullying</h2>
         <div class="row mt-5">
-            <div class="col col-lg-2 body-color">
-                <p class="text-justify ">Hockey is a beloved sport that brings people together from all
+            <div class="col col-md-6 col-lg-3 body-color">
+                <p class="text-justify h5">Hockey is a beloved sport that brings people together from all
                     walks of life.
                     However, like any
                     sport, it can also be a breeding ground for negative behavior, including bullyig.
@@ -17,8 +17,8 @@
                     of harassment, sexism, or bullying.
                 </p>
             </div>
-            <div class="col">
-                <b-img src="https://via.placeholder.com/1100x400" fluid alt=" Image"></b-img>
+            <div class="col-md-6 col-lg-9">
+                <b-img src="https://via.placeholder.com/1400x400" fluid alt=" Image"></b-img>
             </div>
 
         </div>
