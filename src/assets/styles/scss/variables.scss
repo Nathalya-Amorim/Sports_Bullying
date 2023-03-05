@@ -1,7 +1,8 @@
 $primary-font: 'Exo 2', sans-serif;
 $secondary-font: 'Roboto', sans-serif;
 
-$eminence: rgb(84, 42, 125);
+$eminence: #51267c;
+$eminence02: rgb(159, 79, 208);
 $eminence-09: rgb(84, 42, 125, 0.9);
 $eminence-05: rgb(84, 42, 125, 0.5);
 $shuttle-gray: #67686A;
@@ -11,9 +12,10 @@ $punch: rgb(219, 58, 56);
 $eastern-blue: rgb(23, 156, 200);
 $black: #000000;
 
-$westar: #E5E4E2;
+$line-height15: 1.5;
 
-//BREAKPOINTS
+$westar: #E5E4E2;
+$white: #fff; //BREAKPOINTS
 // Desktop
 $mobile: 640px;
 
