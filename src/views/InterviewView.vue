@@ -1,35 +1,58 @@
-<script setup lang="ts">
-// import HeaderSection from '../components/HeaderSection.vue';
+<script setup>
+import HeaderSection from '../components/HeaderSection.vue';
+import axios from 'axios';
+</script>
+
+<script>
+
+export default {
+  data() {
+    return {
+      interview: {},
+      qas: []
+    };
+  },
+  mounted() {
+    axios.get('/includes/data/LoadQAAction.php?id=' + this.$route.params.id).then(res => {
+      this.qas = res.data;
+    }).catch(err => {
+      console.error(err)
+    });
+
+    axios.get('/includes/data/LoadInterviewsAction.php?id=' + this.$route.params.id).then(res => {
+      this.interview = res.data[0];
+    }).catch(err => {
+      console.error(err)
+    });
+  }
+}
+
 </script>
 
 <template>
   <main id="body">
-    <div class="hero-container">
-      <div class="logo-container">
-        <h1 class="hidden">We Are All Hockey</h1>
-        <b-img src="../../public/images/logo_we-are-all-hockey-v.svg" fluid alt="Logo Image"></b-img>
-      </div>
+    <HeaderSection :showHero="false" />
+    <div class="interview-hero-container"
+      v-bind:style="{ backgroundImage: 'url(/images/' + interview['int_hero'] + ')' }">
     </div>
     <div class="float-tag col-md-6">
-      <span>ahsiduasiduh</span>
+      <span>{{ interview['int_name'] }}</span>
     </div>
     <div class="row">
       <div class="col-md-6">
-        <div class="text-box">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur, nunc in
-          bibendum malesuada, diam risus commodo libero, id bibendum libero enim in nibh. Morbi euismod erat quam, at
-          congue mauris tincidunt id. Fusce ac neque vel nibh feugiat fringilla vel at turpis. Sed vel velit vel nulla
-          tempus malesuada. Aenean consectetur, est ut tincidunt faucibus, risus dolor fermentum qu</div>
-        <div class="interview-secondary-img"></div>
+        <div class="text-box">{{ interview['int_description'] }}</div>
+        <div class="interview-secondary-img"
+          v-bind:style="{ backgroundImage: 'url(/images/' + interview['int_image'] + ')' }">
+        </div>
       </div>
       <div class="col-md-6">
-        <div class="col-md-12">
-          <h2>Title</h2>
-        </div>
-        <div class="col-md-12">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam efficitur, nunc in
-            bibendum malesuada, diam risus commodo libero, id bibendum libero enim in nibh. Morbi euismod erat quam, at
-            congue mauris tincidunt id. Fusce ac neque vel nibh feugiat fringilla vel at turpis. Sed vel velit vel nulla
-            tempus malesuada. Aenean consectetur, est ut tincidunt faucibus, risus dolor fermentum qu</p>
+        <div v-for="qa in qas">
+          <div class="col-md-12">
+            <h2>{{ qa['qas_question'] }}</h2>
+          </div>
+          <div class="col-md-12">
+            <p>{{ qa['qas_answer'] }}</p>
+          </div>
         </div>
       </div>
       <div class="col-6 return-to-home-box">
@@ -63,7 +86,7 @@ p {
   align-items: center;
   justify-content: center;
   background-repeat: no-repeat;
-  background-image: url(https://via.placeholder.com/1900x760);
+  // background-image: url(https://via.placeholder.com/1900x760);
 }
 
 .float-tag {
@@ -89,7 +112,7 @@ p {
 .interview-secondary-img {
   height: 900px;
   width: 900px;
-  background-image: url(https://via.placeholder.com/900X900);
+  // background-image: url(https://via.placeholder.com/900X900);
   background-repeat: no-repeat;
 }
 
