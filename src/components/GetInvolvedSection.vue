@@ -18,19 +18,19 @@
             </div>
         </div>
         <div class="row text-center box">
-            <div class="col text-center align-self-center color-box-eminence my-auto">
-
-
-                <p class="font-family-secondary h5 color-westar">It's time for hockey to change<br><span
-                        class="color-westar ">#NoMoreSilence</span> <br>
-                    The only way the game will grow <br>is to
-                    stop bullying and start to <br>make our life better together.</p>
-
+            <b-img class="arrow" src="/images/arrow_white_hero.svg" alt="Logo Image"></b-img>
+            <div class="col-12 col-md-6 color-box-eminence">
+                <div class="get-involved-text-container">
+                    <p class="font-family-secondary h5 color-westar">It's time for hockey to change<br><span
+                            class="color-westar ">#NoMoreSilence</span> <br>
+                        The only way the game will grow <br>is to
+                        stop bullying and start to <br>make our life better together.</p>
+                </div>
             </div>
 
-            <div class="col text-center align-self-center ">
+            <div class="col-12 col-md-6 text-center align-self-center share">
                 <router-link to="/contact">
-                    <b-button disabled size="lg" variant="info">SHARE YOUR EXPERIENCE</b-button>
+                    <b-button size="lg" variant="info">SHARE YOUR EXPERIENCE</b-button>
                 </router-link>
                 <p class="highlight-eminence h3 font-weight-bold mt-2 ">#WeAreAllHockey</p>
             </div>
@@ -49,18 +49,50 @@ export default {
 .box {
     height: 400px;
 
+    .arrow {
+        height: 100%;
+        position: absolute;
+        z-index: 10;
+        padding: 20px;
+    }
+
+    .color-box-eminence {
+        height: 400px;
+        background-color: $eminence;
+
+        .get-involved-text-container {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    .share {
+        position: absolute;
+        bottom: 0;
+
+        @include tablet {
+            position: relative;
+        }
+
+        p {
+            color: $westar;
+
+            @include tablet {
+                color: $eminence;
+            }
+        }
+
+
+    }
 }
 
 
-.color-box-eminence {
-    height: 400px;
-    background-color: $eminence;
-}
+
 
 .font-family-seconday {
     font-size: $secondary-font;
-
-
 }
 
 .color-westar {

@@ -8,20 +8,20 @@
         </div>
         <h2 class="hidden">Header Section</h2>
         <div class="hero-container containerHero" v-if="showHero">
-            <div>
-                <b-img class="arrowHero" src="/images/arrow_white_hero.svg" fluid alt="Logo Image"></b-img>
-            </div>
             <div class="gridContainer">
                 <div class="hockeyText">
-                    <h2 class="font-weight-bold  display-2 highlight-white">
-                        HER HOCKEY
+                    <h2 class="font-weight-bold highlight-white">
+                        HER HOCKEY.
                     </h2>
                 </div>
-                <div class=" voiceText">
-                    <h2 class="font-weight-bold  display-2 highlight-eminence-purple">
-                        HER VOICE
+                <div class="voiceText">
+                    <h2 class="font-weight-bold highlight-eminence-purple">
+                        HER VOICE.
                     </h2>
                 </div>
+            </div>
+            <div>
+                <b-img class="arrowHero" src="/images/arrow_white_hero.svg" alt="Logo Image"></b-img>
             </div>
         </div>
     </section>
@@ -42,38 +42,44 @@ export default {
 .hero-container {
     position: relative;
     width: 100%;
-    // height: 750px;
-    height: 100vh;
+    height: calc(100vh - 120px);
     background-size: cover;
     background-position: center;
     display: grid;
-    // align-items: center;
-    // justify-content: center;
     object-fit: cover;
     background-repeat: no-repeat;
     background-image: url(/images/hero-image-1440x890.jpg);
 
+    .voiceText {
+        color: $eminence02;
+    }
 
-    // @include mobile {
-    //     height: 50vh;
-    //     background-image: url(/images/hero-image-mobile.jpg);
-    // }
+    .hockeyText,
+    .voiceText {
+        @include tablet {
+            h2 {
+                font-size: 5em;
+            }
+
+            padding: 0px 50px 0 50px;
+        }
+
+    }
 }
 
-// .hero-image {
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-// }
 
-.logo-container img {
-    width: 120px;
-    background-color: $white;
-    margin-top: 20px;
-    margin-bottom: 20px;
+.logo-container {
+    height: 120px;
+
+    img {
+        width: 120px;
+        background-color: $white;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
 }
 
-.highlight-eminence-purple {
+.logo-container .highlight-eminence-purple {
     color: $eminence02;
     font-weight: 900;
 
@@ -109,8 +115,10 @@ export default {
 .arrowHero {
     position: absolute;
     z-index: 100;
-    width: 2%;
+    width: auto;
     margin-top: 20px;
+    right: 20px;
 
+    height: 95%;
 }
 </style>
