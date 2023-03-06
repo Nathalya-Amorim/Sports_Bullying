@@ -1,52 +1,55 @@
 <template>
     <footer class="container">
-        <h2 class="hidden">Footer Section</h2>
         <div class="row">
+            <div class="info col-12">
+                <span class="section-title">Info</span>
+                <nav>
+                    <a href="/html/">About Us</a>
+                    <a href="/html/">Interviews</a>
+                    <a href="/html/">Contact Us</a>
+                </nav>
+            </div>
+            <div class="partner col-12 col-md-4">
+                <span class="section-title row">Partner</span>
+                <img class="whl-logo" src="/images/WHL-Logo.png" alt="">
+                <a class="visit-whl" href="https://womenshockeylife.com/" target="_blank">Visit WHL Site</a>
+            </div>
+            <div class="campaign col-12 col-md-4">
+                <span class="section-title row">Campaign Guided By</span>
+                <img class="fanshawe-logo" src="/images/logo_fanshawe.png" alt="">
+            </div>
+            <div class="follow-us col-12 col-md-4">
+                <span class="section-title row">Follow us</span>
+                <div class="row">
+                    <div class="col-6 col-md-12">
+                        <a href="https://www.instagram.com/nathalyamorim87/" target="_blank" rel="noopener noreferrer">
+                            <span class="social">
+                                <i class="fa-brands fa-instagram"></i>
+                            </span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/nathalya-menezes-0b1a37130/" target="_blank"
+                            rel="noopener noreferrer">
+                            <span class="social">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </span>
+                        </a>
 
-            <div class="col-md-6 color-box-gray ">
-                <div class="mt-4">
-                    <h3 class="color-westar font-weight-bold h2">We are all one</h3>
-                    <h2 class="highlight-eminence">#WeAreAllHockey</h2>
-
-                    <p class="color-westar">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore
-                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
-                        ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                        culpa qui officia deserunt mollit anim id est laborum.
-                    </p>
-                    <p class="color-westar">
-                        Fanshawe College | Winter 2023
-                    </p>
+                        <a href="https://github.com/Nathalya-Amorim" target="_blank" rel="noopener noreferrer">
+                            <span class="social">
+                                <i class="fa-brands fa-github"></i>
+                            </span>
+                        </a>
+                    </div>
+                    <div class="col-6 col-md-12">
+                        <span class="row hash-gray">#NoMoreBullying</span>
+                        <span class="row highlight-eminence">#WeAreAllHockey</span>
+                    </div>
                 </div>
             </div>
-
-            <div class="col-md-6 color-box-eminence">
-                <div class="form-container mx-auto">
-                    <h3 class="color-westar font-weight-bold ">SUPPORT THIS CAMPAIGN</h3>
-                    <h4 class="color-westar font-family-seconday">Leave your message</h4>
-                    <b-form @submit="onSubmit">
-                        <div class="mb-3">
-                            <b-form-input v-model="name" placeholder="Enter you name"></b-form-input>
-                        </div>
-                        <div class="mb-3">
-                            <b-form-input v-model="email" placeholder="name@example.com" type="email"></b-form-input>
-                        </div>
-                        <div class="mb-3">
-                            <b-form-textarea id="textarea" v-model="message" placeholder="Your message..." rows="3"
-                                max-rows="6">
-                            </b-form-textarea>
-                        </div>
-                        <div class="mb-3">
-                            <b-button type="submit" variant="btn btn-info">Send</b-button>
-                        </div>
-                        <p class="color-westar">copyright @All rights reserved</p>
-                    </b-form>
-                </div>
+            <hr>
+            <div>
+                <span>Fanshawe College | Winter 2023</span>
             </div>
-
         </div>
 
     </footer>
@@ -75,19 +78,61 @@ export default {
 
 
 <style lang="scss">
-.color-box-gray {
-    background-color: $shuttle-gray;
-}
+footer {
+    background-color: #DEDEDE;
+    padding: 20px;
 
-.custom-width {
-    width: 500px;
-}
+    a {
+        text-decoration: none;
+        color: #4D4D4D;
+        margin: 10px;
+    }
 
-.form-container {
-    padding-top: 10px;
+    .info {
+        margin-bottom: 20px;
+    }
 
-    @include tablet {
-        width: 70%;
+    .partner {
+        margin-bottom: 20px;
+
+        .whl-logo {
+            height: 75px;
+        }
+
+        .visit-whl {
+            background-color: $eminence;
+            color: $westar;
+            padding: 15px;
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+    }
+
+    .campaign {
+        margin-bottom: 20px;
+
+        .fanshawe-logo {
+            width: 200px;
+        }
+    }
+
+    .follow-us {
+        margin-bottom: 20px;
+
+        .hash-gray {
+            color: #4D4D4D;
+        }
+
+        .hash-purple {
+            color: $eminence;
+            font-weight: bold;
+        }
+    }
+
+    .section-title {
+        margin: 10px;
+        color: #4D4D4D;
+        font-weight: bold;
     }
 }
 </style>

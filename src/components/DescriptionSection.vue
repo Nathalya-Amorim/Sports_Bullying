@@ -1,35 +1,46 @@
 <template>
     <section class="container mt-5">
-        <h2 class="hidden"> Description of the Campaign</h2>
-        <h2 class=" d-flex justify-content-center  display-4  highlight-eminence text-uppercase font-family">
-            a major penalty for
-            bullying</h2>
-        <div class="row mt-5">
-            <div class="col col-md-6 col-lg-3 body-color">
-                <p class="text-justify getText display-5">Hockey is a beloved sport that brings people together from all
-                    walks of life.
-                    However, like any
-                    sport, it can also be a breeding ground for negative behavior, including bullyig.
-                    <br><br>At <span class="highlight-eminence">#WeAreAllHockey</span>, we believe that every
-                    player
-                    will be
-                    able to enjoy
-                    the sport without fear
-                    of harassment, sexism, or bullying.
-                </p>
+        <div class="row campaign-container">
+            <div class="col-2 col-md-1">
+                <b-img class="arrowDescription" src="/images/arrow-purple-vertical.svg" alt="Logo Image"></b-img>
             </div>
-            <div class="col-md-6 col-lg-9 girlsLook">
-                <b-img src="/images/girls-team-730x400.jpg" fluid alt="Hockey Girls Looking at each other"></b-img>
+            <div class="col-10 col-md-11">
+                <h2 class="hidden"> Description of the Campaign</h2>
+                <h2 class=" d-flex justify-content-center  display-4  highlight-eminence text-uppercase font-family">
+                    a major penalty for
+                    bullying
+                </h2>
+                <div class="row mt-5">
+                    <div class="col-md-6 col-lg-4 body-color">
+                        <p class="text-justify getText display-5">Hockey is a beloved sport that brings people together from
+                            all
+                            walks of life.
+                            However, like any
+                            sport, it can also be a breeding ground for negative behavior, including bullyig.
+                            <br><br>At <span class="highlight-eminence">#WeAreAllHockey</span>, we believe that every
+                            player
+                            will be
+                            able to enjoy
+                            the sport without fear
+                            of harassment, sexism, or bullying.
+                        </p>
+                    </div>
+                    <div class="col-md-6 col-lg-8 girlsLook">
+                        <b-img src="/images/girls-team-730x400.jpg" fluid alt="Hockey Girls Looking at each other"></b-img>
+                    </div>
+                </div>
+                <div class="mt-4 d-flex justify-content-end">
+                    <h2 class="  committed-class font-weight-bold body-color text-uppercase display-6">we are all committed
+                        to
+                        promoting a <span class=" font-weight-bold highlight-flame-pea">culture<br></span> of
+                        <span class=" font-weight-bold highlight-eastern-blue">respect </span> and
+                        <span class=" font-weight-bold highlight-punch">inclusion</span> in hockey.
+                    </h2>
+                </div>
             </div>
+        </div>
 
-        </div>
-        <div class="mt-4 d-flex justify-content-end">
-            <h2 class="  committed-class font-weight-bold body-color text-uppercase display-6">we are all committed to
-                promoting a <span class=" font-weight-bold highlight-flame-pea">culture<br></span> of
-                <span class=" font-weight-bold highlight-eastern-blue">respect </span> and
-                <span class=" font-weight-bold highlight-punch">inclusion</span> in hockey.
-            </h2>
-        </div>
+
     </section>
 </template>
 
@@ -66,10 +77,35 @@ export default {
 
 .girlsLook {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    margin-bottom: 25px;
+
+    @include tablet {
+        margin-bottom: 0px;
+    }
 }
 
 .getText {
     font-size: 20px;
+}
+
+.row.mt-5 {
+    flex-direction: column-reverse;
+    margin-bottom: 25px;
+
+    @include tablet {
+        flex-direction: unset;
+        margin-bottom: 0px;
+    }
+}
+
+.campaign-container {
+    position: relative;
+    height: 100%;
+}
+
+.arrowDescription {
+    height: 100%;
+    position: absolute;
 }
 </style>

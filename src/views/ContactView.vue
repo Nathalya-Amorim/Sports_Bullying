@@ -37,7 +37,7 @@ export default {
     <main id="body">
         <HeaderSection :showHero="false" />
         <section class="container">
-            <div class=" color-box-eminence">
+            <div class="color-box-eminence">
                 <p v-if="error" class="error">{{ error }}</p>
                 <div class="form-container mx-auto">
                     <b-form @submit.prevent="onSubmit">
