@@ -2,9 +2,13 @@
 </script>
 
 <template>
-  <div class="container-fluid p-0">
+  <div class="root-container container-fluid p-0">
     <router-view />
   </div>
 </template>
 
-<style lang="scss"></style >
+<style lang="scss">
+.root-container {
+  background-color: $westar;
+}
+</style >

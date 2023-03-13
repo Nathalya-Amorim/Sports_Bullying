@@ -1,9 +1,11 @@
 <template>
-    <section>
+    <section class="header-section">
         <div class="containerHero d-flex justify-content-center logo-container">
             <div>
                 <h1 class="hidden">We Are All Hockey</h1>
-                <b-img src="/images/logo_we-are-all-hockey-v.svg" fluid alt="Logo Image"></b-img>
+                <a href="/">
+                    <b-img src="/images/logo_we-are-all-hockey-v.svg" fluid alt="Logo Image"></b-img>
+                </a>
             </div>
         </div>
         <h2 class="hidden">Header Section</h2>
@@ -11,12 +13,12 @@
             <div class="gridContainer">
                 <div class="hockeyText">
                     <h2 class="font-weight-bold highlight-white">
-                        HER HOCKEY.
+                        HER HOCKEY
                     </h2>
                 </div>
                 <div class="voiceText">
                     <h2 class="font-weight-bold highlight-eminence-purple">
-                        HER VOICE.
+                        HER VOICE
                     </h2>
                 </div>
             </div>
@@ -39,6 +41,10 @@ export default {
 </script>
 
 <style lang="scss">
+.header-section {
+    background-color: $white;
+}
+
 .hero-container {
     position: relative;
     width: 100%;
@@ -49,6 +55,7 @@ export default {
     object-fit: cover;
     background-repeat: no-repeat;
     background-image: url(/images/hero-image-1440x890.jpg);
+    background-attachment: fixed;
 
     .voiceText {
         color: $eminence02;

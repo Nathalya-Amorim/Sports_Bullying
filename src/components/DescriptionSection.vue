@@ -1,5 +1,5 @@
 <template>
-    <section class="container mt-5">
+    <section class="description-section container pt-5">
         <div class="row campaign-container">
             <div class="col-2 col-md-1">
                 <b-img class="arrowDescription" src="/images/arrow-purple-vertical.svg" alt="Logo Image"></b-img>
@@ -51,6 +51,10 @@ export default {
 </script>
 
 <style lang="scss">
+.description-section {
+    background-color: $white;
+}
+
 .font-family {
     font-family: $primary-font;
 }
