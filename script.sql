@@ -21,6 +21,14 @@ CREATE TABLE `tbl_qas` (
     REFERENCES tbl_interviews (id)  
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+CREATE TABLE `tbl_contacts` (
+  `id` int(10) NOT NULL AUTO_INCREMENT,
+  `con_name` varchar(150) NOT NULL,
+  `con_email` varchar(150) NOT NULL,
+  `con_message` varchar(1000) NOT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
 INSERT INTO `tbl_interviews`(`id`,`int_name`, `int_description`, `int_date`, `int_image`, `int_enabled`) 
 VALUES (1,
     'Camila Massaguer',

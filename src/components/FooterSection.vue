@@ -1,57 +1,58 @@
 <template>
-    <footer class="container">
-        <div class="row">
-            <div class="info col-12">
-                <span class="section-title">Info</span>
-                <nav>
-                    <a href="/html/">About Us</a>
-                    <a href="/html/">Interviews</a>
-                    <a href="/html/">Contact Us</a>
-                </nav>
-            </div>
-            <div class="partner col-12 col-md-4">
-                <span class="section-title row">Partner</span>
-                <img class="whl-logo" src="/images/WHL-Logo.png" alt="">
-                <a class="visit-whl" href="https://womenshockeylife.com/" target="_blank">Visit WHL Site</a>
-            </div>
-            <div class="campaign col-12 col-md-4">
-                <span class="section-title row">Campaign Guided By</span>
-                <img class="fanshawe-logo" src="/images/logo_fanshawe.png" alt="">
-            </div>
-            <div class="follow-us col-12 col-md-4">
-                <span class="section-title row">Follow us</span>
-                <div class="row">
-                    <div class="col-6 col-md-12">
-                        <a href="https://www.instagram.com/nathalyamorim87/" target="_blank" rel="noopener noreferrer">
-                            <span class="social">
-                                <i class="fa-brands fa-instagram"></i>
-                            </span>
-                        </a>
-                        <a href="https://www.linkedin.com/in/nathalya-menezes-0b1a37130/" target="_blank"
-                            rel="noopener noreferrer">
-                            <span class="social">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </span>
-                        </a>
+    <footer class="">
+        <div class="container">
+            <div class="row">
+                <div class="info col-12">
+                    <span class="section-title">Info</span>
+                    <nav>
+                        <a href="/">Home</a>
+                        <a href="/about/">About Us</a>
+                        <a href="/interview/1">Interviews</a>
+                        <a href="/contact/">Contact Us</a>
+                    </nav>
+                </div>
+                <div class="partner col-12 col-md-4">
+                    <span class="section-title row">Partner</span>
+                    <img class="whl-logo" src="/images/WHL-Logo.png" alt="">
+                    <a class="visit-whl" href="https://womenshockeylife.com/" target="_blank">Visit WHL Site</a>
+                </div>
+                <div class="campaign col-12 col-md-4">
+                    <span class="section-title row">Campaign Guided By</span>
+                    <img class="fanshawe-logo" src="/images/logo_fanshawe.png" alt="">
+                </div>
+                <div class="follow-us col-12 col-md-4">
+                    <span class="section-title row">Follow us</span>
+                    <div class="row">
+                        <div class="col-6 col-md-12">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                                <span class="social">
+                                    <i class="fa-brands fa-instagram"></i>
+                                </span>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                                <span class="social">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </span>
+                            </a>
 
-                        <a href="https://github.com/Nathalya-Amorim" target="_blank" rel="noopener noreferrer">
-                            <span class="social">
-                                <i class="fa-brands fa-github"></i>
-                            </span>
-                        </a>
-                    </div>
-                    <div class="col-6 col-md-12">
-                        <span class="row hash-gray">#NoMoreBullying</span>
-                        <span class="row highlight-eminence">#WeAreAllHockey</span>
+                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                                <span class="social">
+                                    <i class="fa-brands fa-github"></i>
+                                </span>
+                            </a>
+                        </div>
+                        <div class="col-6 col-md-12">
+                            <span class="row hash-gray">#NoMoreBullying</span>
+                            <span class="row highlight-eminence">#WeAreAllHockey</span>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <hr>
-            <div>
-                <span>Fanshawe College | Winter 2023</span>
+                <hr>
+                <div>
+                    <span>Fanshawe College | Winter 2023</span>
+                </div>
             </div>
         </div>
-
     </footer>
 </template>
 
@@ -133,6 +134,14 @@ footer {
         margin: 10px;
         color: #4D4D4D;
         font-weight: bold;
+    }
+}
+
+a {
+    &:hover {
+        text-decoration: none !important;
+        color: $eminence !important;
+        font-weight: bold !important;
     }
 }
 </style>

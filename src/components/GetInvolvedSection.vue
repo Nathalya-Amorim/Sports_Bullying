@@ -6,25 +6,38 @@
         <p class="pStyle mb-4">See below three interviews about women's hockey life</p>
         <div class="row">
             <div class="col-md-4 no-padding">
-                <router-link :to="{ name: 'interview', params: { id: 1 } }">
+                <!-- <router-link :to="{ name: 'interview', params: { id: 1 } }">
                     <b-img src="/images/camila-dubera-interview-pic.jpg" fluid alt=" Camila Dubera"></b-img>
-                </router-link>
+                </router-link> -->
+                <a href="/interview/1" class="interview-link" alt="Camila Dubera Interview">
+                    <img src="/images/purple-gradient.png" class="img-fluid filter" alt="Camila Dubera Interview" />
+                    <img src="/images/camila-dubera-interview-pic.jpg" class="img-fluid" alt="Camila Dubera Interview" />
+                </a>
             </div>
             <div class="col-md-4 no-padding">
-                <b-img src="/images/sabrina-tripla-interview-pic.jpg" fluid alt=" Sabrina Tripla"></b-img>
+                <a href="/interview/2" class="interview-link" alt="Camila Dubera Interview">
+                    <img src="/images/orange-gradient.png" class="img-fluid filter" alt="Sabrina Tripla Interview" />
+                    <img src="/images/sabrina-tripla-interview-pic.jpg" class="img-fluid" alt="Sabrina Tripla Interview" />
+                </a>
             </div>
             <div class="col-md-4 no-padding">
-                <b-img src="/images/hillary-brennan-interview-pic.jpg" fluid alt=" Hillary Brennan"></b-img>
+                <a href="/interview/3" class="interview-link" alt="Camila Dubera Interview">
+                    <img src="/images/purple-gradient.png" class="img-fluid filter" alt="Hillary Brennan Interview" />
+                    <img src="/images/hillary-brennan-interview-pic.jpg" class="img-fluid"
+                        alt="Hillary Brennan Interview" />
+                </a>
             </div>
         </div>
         <div class="row text-center box">
             <b-img class="arrow" src="/images/arrow_white_hero.svg" alt="Logo Image"></b-img>
             <div class="col-12 col-md-6 color-box-eminence">
                 <div class="get-involved-text-container">
-                    <p class="font-family-secondary h5 color-westar">It's time for hockey to change<br><span
-                            class="color-westar ">#NoMoreSilence</span> <br>
-                        The only way the game will grow <br>is to
-                        stop bullying and start to <br>make our life better together.</p>
+                    <p class="font-family-secondary h5 color-westar">It's time for hockey to change</p>
+                    <span class="color-westar hashtag">#NoMoreSilence</span>
+                    <p class="font-family-secondary h5 color-westar">The only way the game will grow<br>
+                        is to stop bullying and start to <br>
+                        make our life better together.<br></p>
+
                 </div>
             </div>
 
@@ -65,6 +78,13 @@ export default {
             left: 50%;
             top: 50%;
             transform: translate(-50%, -50%);
+
+            .hashtag {
+                font-size: 2em;
+                font-weight: bold;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
         }
     }
 
@@ -88,7 +108,18 @@ export default {
     }
 }
 
+.interview-link {
+    .filter {
+        position: absolute;
+        z-index: 10;
+        opacity: 1;
+        transition: all ease-in-out .5s;
 
+        &:hover {
+            opacity: 0;
+        }
+    }
+}
 
 
 .font-family-seconday {

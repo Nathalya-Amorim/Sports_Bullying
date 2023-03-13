@@ -22,9 +22,12 @@ export default {
 <template>
   <main id="body">
     <HeaderSection />
-    <DescriptionSection />
-    <GetInvolvedSection />
-    <VideoSection />
+    <div class="home-content container box-shadow">
+      <DescriptionSection />
+      <GetInvolvedSection />
+      <VideoSection />
+    </div>
+
     <FooterSection />
   </main>
 </template>
@@ -33,19 +36,24 @@ main {
   max-width: 1920px;
   // max-width: 1280px;
   margin: auto;
-}
 
-.container {
-  max-width: 1280px;
-  // margin: auto;
-  // max-width: 1920px !important;
+  .home-content {
+    background-color: $white;
+  }
 
-}
+  .container {
+    max-width: 1280px;
+  }
 
-.containerHero {
+  .box-shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
 
-  margin: auto;
-  max-width: 1920px !important;
+  .containerHero {
 
+    margin: auto;
+    max-width: 1920px !important;
+
+  }
 }
 </style>
