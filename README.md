@@ -10,6 +10,7 @@ Bullying is a significant problem in schools, workplaces, homes, and online. The
 ## Languages / Tools 
 - BoostrapVue
 - PHP 
+- Vue CLI
 
 ## Collaborators
 - Laura Albarracin - Project Manager
