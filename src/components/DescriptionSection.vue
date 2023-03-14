@@ -6,10 +6,10 @@
             </div>
             <div class="col-10 col-md-11">
                 <h2 class="hidden"> Description of the Campaign</h2>
-                <h2 class=" d-flex justify-content-center  display-4  highlight-eminence text-uppercase font-family">
+                <h3 class=" d-flex justify-content-center  display-4  highlight-eminence text-uppercase font-family">
                     a major penalty for
                     bullying
-                </h2>
+                </h3>
                 <div class="row mt-5">
                     <div class="col-md-6 col-lg-4 body-color">
                         <p class="text-justify getText display-5">Hockey is a beloved sport that brings people together from
@@ -30,12 +30,12 @@
                     </div>
                 </div>
                 <div class="mt-4 d-flex justify-content-end">
-                    <h2 class="  committed-class font-weight-bold body-color text-uppercase display-6">we are all committed
+                    <h4 class="  committed-class font-weight-bold body-color text-uppercase display-6">we are all committed
                         to
                         promoting a <span class=" font-weight-bold highlight-flame-pea">culture<br></span> of
                         <span class=" font-weight-bold highlight-eastern-blue">respect </span> and
                         <span class=" font-weight-bold highlight-punch">inclusion</span> in hockey.
-                    </h2>
+                    </h4>
                 </div>
             </div>
         </div>
@@ -53,6 +53,10 @@ export default {
 <style lang="scss">
 .description-section {
     background-color: $white;
+
+    h4 {
+        font-size: 30px;
+    }
 }
 
 .font-family {
@@ -91,6 +95,8 @@ export default {
 
 .getText {
     font-size: 20px;
+    font-family: $secondary-font;
+
 }
 
 .row.mt-5 {
