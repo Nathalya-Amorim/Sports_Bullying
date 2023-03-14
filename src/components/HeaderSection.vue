@@ -23,7 +23,7 @@
                 </div>
             </div>
             <div>
-                <b-img class="arrowHero" src="/images/arrow_white_hero.svg" alt="Logo Image"></b-img>
+                <b-img class="arrowHero" src="/images/arrow_hero.svg" alt="Logo Image"></b-img>
             </div>
         </div>
     </section>
@@ -54,8 +54,10 @@ export default {
     display: grid;
     object-fit: cover;
     background-repeat: no-repeat;
-    background-image: url(/images/hero-image-1440x890.jpg);
+    background-image: url(/images/hero-image-1440x890-2.png);
     background-attachment: fixed;
+
+
 
     .voiceText {
         color: $eminence02;

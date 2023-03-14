@@ -192,6 +192,7 @@ section {
 
         height: 80px;
         font-family: "Exo 2", sans-serif;
+        font-weight: 700;
         text-transform: uppercase;
         font-size: 40px;
     }
@@ -202,7 +203,8 @@ section {
     color: $westar;
     margin: 0px 0px 15px 15px;
     padding: 0px 40px 40px 40px;
-    font-family: 'Inter', sans-serif;
+    font-family: $secondary-font;
+    font-size: 20px;
 
     .arrow-text-box {
         rotate: 90deg;

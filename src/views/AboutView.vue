@@ -16,9 +16,21 @@ export default {
         </div>
         <section class="container">
             <div class="contact-box align-self-center box-shadow">
-                <h2>Who we are?</h2>
-                <p>We believe that empowering women in hockey is the to ending bullying. Connect with us and let's start the
-                    journey towards empowerment and positve changes.</p>
+                <h2>Our Story </h2>
+                <p><span class="highlight-flame-pea ">Laura Albarracin</span>, <span class="highlight-eastern-blue">Mariia
+                        Shevchenko</span>, <span class="highlight-punch">Nathálya
+                        Menezes</span> , and
+                    <span class="highlight-flame-pea">Tallyta Triolo</span> were classmates at Fanshawe
+                    College's Interactive Media Design program. They came together to create the "We Are All Hockey"
+                    campaign to raise awareness about bullying against women in hockey and promote inclusivity in the sport.
+                    They designed a website, organized workshops, and gained support from the hockey community and beyond.
+                    Their campaign became a movement, and they continue to advocate for inclusivity and equality in all
+                    aspects of life.<br>
+                    <br>
+                    Today, "We Are All Hockey" is a well-known and respected campaign that has made a positive impact on the
+                    hockey community. Its founders remain dedicated to their cause and continue to work together to promote
+                    their message and make a difference.
+                </p>
             </div>
         </section>
         <div class=" gray-box"></div>
@@ -60,9 +72,16 @@ label {
         text-transform: uppercase;
     }
 
-    h2,
+    h2 {
+        font-family: $primary-font;
+        color: $westar;
+        font-weight: 700;
+    }
+
     p {
         color: $westar;
+        font-family: $secondary-font;
+        font-size: 20px;
     }
 
     .contact-box {

@@ -48,7 +48,9 @@ export default {
         <section class="container">
             <div class="contact-box align-self-center box-shadow">
                 <h2>Take a stand</h2>
-                <p>We believe that empowering women in hockey is the to ending bullying. Connect with us and let's start the
+                <p>We believe that empowering women in hockey is the to ending bullying.<br> Connect with us and let's
+                    start
+                    the
                     journey towards empowerment and positve changes.</p>
                 <p v-if="error" class="error">{{ error }}</p>
                 <div class="form-container mx-auto">
@@ -71,7 +73,7 @@ export default {
                         <div class="mb-3">
                             <b-button type="submit" variant="btn btn-info">Send</b-button>
                         </div>
-                        <p class="color-westar">copyright @All rights reserved</p>
+                        <span class="color-westar">copyright @All rights reserved</span>
                     </b-form>
                 </div>
             </div>
@@ -84,10 +86,14 @@ export default {
 <style lang="scss" scoped>
 label {
     color: $westar;
+    font-family: $secondary-font;
+    font-size: 15px;
 }
 
 .error {
     color: $westar;
+    font-family: $secondary-font;
+    font-size: 20px;
 }
 
 .contact-hero-container {
@@ -111,14 +117,17 @@ label {
     position: initial;
 
     h2 {
-        height: 80px;
+        height: 55px;
         font-family: "Exo 2", sans-serif;
         text-transform: uppercase;
+        font-weight: bold;
+        color: $westar;
     }
 
-    h2,
     p {
         color: $westar;
+        font-family: $secondary-font;
+        font-size: 20px;
     }
 
     .contact-box {
@@ -132,6 +141,11 @@ label {
             margin-left: 100px;
             margin-right: 100px;
         }
+    }
+
+    span {
+        font-family: $secondary-font;
+        font-size: 12px;
     }
 }
 

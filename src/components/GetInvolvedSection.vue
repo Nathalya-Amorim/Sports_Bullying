@@ -85,6 +85,12 @@ export default {
                 margin-top: 10px;
                 margin-bottom: 10px;
             }
+
+            p {
+                font-size: 20px;
+                font-family: $secondary-font;
+
+            }
         }
     }
 
@@ -131,9 +137,9 @@ export default {
 }
 
 .pStyle {
-    font-size: 1.5rem;
+    font-size: 20px;
     font-family: $secondary-font;
-    font-weight: 400;
+    color: $scarpa-flow;
 }
 </style>
 

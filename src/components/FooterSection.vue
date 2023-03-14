@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row">
                 <div class="info col-12">
-                    <span class="section-title">Info</span>
+                    <span class="section-title">INFO</span>
                     <nav>
                         <a href="/">Home</a>
                         <a href="/about/">About Us</a>
@@ -12,16 +12,17 @@
                     </nav>
                 </div>
                 <div class="partner col-12 col-md-4">
-                    <span class="section-title row">Partner</span>
+                    <span class="section-title row">PARTNER</span>
                     <img class="whl-logo" src="/images/WHL-Logo.png" alt="">
+                    <p>Are you a female hockey player looking<br> for more resources and support?</p>
                     <a class="visit-whl" href="https://womenshockeylife.com/" target="_blank">Visit WHL Site</a>
                 </div>
                 <div class="campaign col-12 col-md-4">
-                    <span class="section-title row">Campaign Guided By</span>
+                    <span class="section-title row"> CAMPAIGN GUIDED BY </span>
                     <img class="fanshawe-logo" src="/images/logo_fanshawe.png" alt="">
                 </div>
                 <div class="follow-us col-12 col-md-4">
-                    <span class="section-title row">Follow us</span>
+                    <span class="section-title row">FOLLOW US</span>
                     <div class="row">
                         <div class="col-6 col-md-12">
                             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
@@ -50,6 +51,9 @@
                 <hr>
                 <div>
                     <span>Fanshawe College | Winter 2023</span>
+                </div>
+                <div>
+                    <span>Copyright © 2023 All Rights Reserved </span>
                 </div>
             </div>
         </div>
@@ -87,14 +91,18 @@ footer {
         text-decoration: none;
         color: #4D4D4D;
         margin: 10px;
+        font-family: $secondary-font;
+
     }
 
     .info {
         margin-bottom: 20px;
+
     }
 
     .partner {
         margin-bottom: 20px;
+
 
         .whl-logo {
             height: 75px;
@@ -106,6 +114,12 @@ footer {
             padding: 15px;
             text-transform: uppercase;
             text-decoration: none;
+            font-family: $secondary-font;
+        }
+
+        p {
+            font-family: $secondary-font;
+            font-size: .8em;
         }
     }
 
@@ -136,6 +150,13 @@ footer {
         font-weight: bold;
     }
 }
+
+span {
+    font-family: $secondary-font;
+}
+
+
+
 
 a {
     &:hover {
