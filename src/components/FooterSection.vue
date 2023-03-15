@@ -12,39 +12,47 @@
                     </nav>
                 </div>
                 <div class="partner col-12 col-md-4">
-                    <span class="section-title row">PARTNER</span>
-                    <img class="whl-logo" src="/images/WHL-Logo.png" alt="">
-                    <p>Are you a female hockey player looking<br> for more resources and support?</p>
-                    <a class="visit-whl" href="https://womenshockeylife.com/" target="_blank">Visit WHL Site</a>
+                    <div class="row">
+                        <div class="col-6">
+                            <span class="section-title row">PARTNER</span>
+                            <img class="whl-logo" src="/images/WHL-Logo.png" alt="">
+                        </div>
+                        <div class="col-6 m-auto">
+                            <p class="whl-call">Are you a female hockey player looking for more resources and support?</p>
+                            <a class="visit-whl" href="https://womenshockeylife.com/" target="_blank">Visit WHL Site</a>
+                        </div>
+                    </div>
+
+
                 </div>
                 <div class="campaign col-12 col-md-4">
                     <span class="section-title row"> CAMPAIGN GUIDED BY </span>
                     <img class="fanshawe-logo" src="/images/logo_fanshawe.png" alt="">
                 </div>
-                <div class="follow-us col-12 col-md-4">
-                    <span class="section-title row">FOLLOW US</span>
+                <div class="follow-us col-12 col-md-4 d-flex flex-column">
+                    <span class="section-title row align-self-end">FOLLOW US</span>
                     <div class="row">
-                        <div class="col-6 col-md-12">
+                        <div class="col-6 col-md-12 d-flex flex-row-reverse no-padding">
                             <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
                                 <span class="social">
                                     <i class="fa-brands fa-instagram"></i>
                                 </span>
                             </a>
-                            <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
                                 <span class="social">
-                                    <i class="fa-brands fa-linkedin-in"></i>
+                                    <i class="fa-brands fa-facebook"></i>
                                 </span>
                             </a>
 
-                            <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                                 <span class="social">
                                     <i class="fa-brands fa-github"></i>
                                 </span>
                             </a>
                         </div>
-                        <div class="col-6 col-md-12">
-                            <span class="row hash-gray">#NoMoreBullying</span>
-                            <span class="row highlight-eminence">#WeAreAllHockey</span>
+                        <div class="col-6 col-md-12 d-flex flex-column">
+                            <span class="row hash-gray align-self-end">#NoMoreBullying</span>
+                            <span class="row hash-eminence highlight-eminence align-self-end">#WeAreAllHockey</span>
                         </div>
                     </div>
                 </div>
@@ -142,12 +150,26 @@ footer {
             color: $eminence;
             font-weight: bold;
         }
+
     }
 
     .section-title {
         margin: 10px;
         color: #4D4D4D;
         font-weight: bold;
+
+        &.row.align-self-end {
+            margin: 0;
+        }
+    }
+
+    .whl-call {
+        display: none;
+
+
+        @include tablet {
+            display: block;
+        }
     }
 }
 

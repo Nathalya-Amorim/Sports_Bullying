@@ -4,7 +4,7 @@
             <div class="col-2 col-md-1">
                 <b-img class="arrowDescription" src="/images/arrow-purple-vertical.svg" alt="Logo Image"></b-img>
             </div>
-            <div class="col-10 col-md-11">
+            <div class="col-10 col-md-11 no-padding-left">
                 <h2 class="hidden"> Description of the Campaign</h2>
                 <h3 class=" d-flex justify-content-center  display-4  highlight-eminence text-uppercase font-family">
                     a major penalty for
@@ -117,5 +117,9 @@ export default {
 .arrowDescription {
     height: 100%;
     position: absolute;
+}
+
+.no-padding-left {
+    padding-left: 0px !important;
 }
 </style>
