@@ -22,7 +22,7 @@ export default {
 <template>
   <main id="body">
     <HeaderSection />
-    <div class="home-content container box-shadow">
+    <div class="home-content container box-shadow no-padding">
       <DescriptionSection />
       <GetInvolvedSection />
       <VideoSection />
