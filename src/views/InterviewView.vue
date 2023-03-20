@@ -111,7 +111,7 @@ export default {
                         <div class="col-md-12">
                             <h2>{{ qa['qas_question'] }}</h2>
                         </div>
-                        <div class="col-md-12">
+                        <div class="col-md-12 font-answer">
                             <p>{{ qa['qas_answer'] }}</p>
                         </div>
                     </div>
@@ -251,11 +251,19 @@ section {
         span {
             margin: auto;
         }
+    }
 
+    a {
         &:hover {
-            text-decoration: none;
+            text-decoration: none !important;
+            color: $westar !important;
         }
     }
+
+    &:hover {
+        background-color: $flame-pea;
+    }
+
 }
 
 .social-call-box {
@@ -287,6 +295,11 @@ section {
 
     h2 {
         font-size: 1.5rem;
+    }
+
+    .font-answer {
+        font-family: $secondary-font;
+        font-size: 1rem;
     }
 }
 </style>
