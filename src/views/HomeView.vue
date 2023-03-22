@@ -32,9 +32,12 @@ export default {
   </main>
 </template>
 <style lang="scss">
+#body {
+  max-width: 2800px;
+}
+
 main {
-  max-width: 1920px;
-  // max-width: 1280px;
+  max-width: 2800px;
   margin: auto;
 
   .home-content {
@@ -52,7 +55,7 @@ main {
   .containerHero {
 
     margin: auto;
-    max-width: 1920px !important;
+    max-width: 2800px !important;
 
   }
 }

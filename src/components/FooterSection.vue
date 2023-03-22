@@ -55,7 +55,7 @@
 
                                 <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
                                     <span class="social">
-                                        <i class="fa-brands fa-github fa-2x"></i>
+                                        <i class="fa-brands fa-twitter fa-2x"></i>
                                     </span>
                                 </a>
                             </div>
