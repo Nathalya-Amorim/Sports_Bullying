@@ -14,26 +14,42 @@ export default {
                 message: '',
                 subject: ''
             },
-            error: ''
+            error: '',
+            loading: false,
+            submitted: false
         }
     },
     methods: {
         onSubmit(event) {
             event.preventDefault();
-            console.log("Sending mail with: ", this.formData);
+            this.loading = true;
 
             if (!this.formData.name || !this.formData.email || !this.formData.message) {
                 this.error = 'Please fill all required fields.';
+                this.loading = false;
             } else {
-                console.log(this.formData);
 
                 axios.post('/includes/data/SendContactAction.php', this.formData)
-                    .then(res => console.log(res.data))
-                    .catch(err => console.log(err));
+                    .then(res => {
+                        this.loading = false;
+                        this.submitted = true;
+                    })
+                    .catch(err => {
+                        this.loading = false;
+                        this.submitted = false;
+                        this.error = err.data;
+                    });
 
                 axios.post('/includes/mail/Mail.php', this.formData)
-                    .then(res => console.log(res.data))
-                    .catch(err => console.log(err));
+                    .then(res => {
+                        this.loading = false;
+                        this.submitted = true;
+                    })
+                    .catch(err => {
+                        this.loading = false;
+                        this.submitted = false;
+                        this.error = err.data;
+                    });
             }
         }
     }
@@ -46,12 +62,16 @@ export default {
         <div class="contact-hero-container">
         </div>
         <section class="container">
+
             <div class="contact-box align-self-center box-shadow">
+                <div class="contact-overlay" v-if="loading || submitted">
+                    <span>Thanks for reaching out! You'll get a response ASAP!</span>
+                </div>
                 <h2>Take a stand</h2>
-                <p>We believe that empowering women in hockey is the to ending bullying.<br> Connect with us and let's
-                    start
-                    the
-                    journey towards empowerment and positve changes.</p>
+                <p>We believe that empowering women in hockey is the way to end bullying.
+                    <br> Connect with us and let's
+                    start the journey towards empowerment and positve changes.
+                </p>
                 <p v-if="error" class="error">{{ error }}</p>
                 <div class="form-container mx-auto">
                     <b-form @submit="onSubmit">
@@ -141,11 +161,42 @@ label {
             margin-left: 100px;
             margin-right: 100px;
         }
+
+        .error {
+            color: $punch;
+        }
+
+        button {
+            &:hover {
+                background-color: $flame-pea;
+                border-color: $flame-pea;
+            }
+        }
     }
 
     span {
         font-family: $secondary-font;
         font-size: 12px;
+    }
+
+    .contact-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: $eminence-05;
+        margin-left: -40px;
+        margin-top: -20px;
+        z-index: 100;
+        display: flex;
+
+        span {
+            color: $white;
+            width: 100%;
+            display: block;
+            margin: auto;
+            text-align: center;
+            font-size: 2em;
+        }
     }
 }
 
